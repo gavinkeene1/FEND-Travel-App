@@ -8,6 +8,7 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
     mode: 'development',
+    devtool: 'source-map',
     entry: './src/client/index.js',
     output: {
         libraryTarget: 'var',
