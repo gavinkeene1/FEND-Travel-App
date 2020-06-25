@@ -55,3 +55,8 @@ app.get('/get', getProjectData);
 function getProjectData (req, res) {
   res.send(projectData);
 }
+
+// Give Express the path to dist/index.html to generate the view
+app.get('/', function (req, res) {
+  res.sendFile('dist/index.html')
+})
